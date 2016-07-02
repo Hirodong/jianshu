@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="readList" rowHeight="141" id="KGk-i7-Jjw" customClass="HRReadListCell">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="140.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBb-8a-c3D">
+                        <rect key="frame" x="10" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCD-mT-FrM">
+                        <rect key="frame" x="10" y="67" width="362" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abj-Di-Tks">
+                        <rect key="frame" x="10" y="41" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RCD-mT-FrM" firstAttribute="top" secondItem="abj-Di-Tks" secondAttribute="bottom" constant="10" id="0zn-HP-6Vk"/>
+                    <constraint firstItem="CBb-8a-c3D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5Wz-Zp-FC5"/>
+                    <constraint firstAttribute="trailing" secondItem="RCD-mT-FrM" secondAttribute="trailing" constant="10" id="AXx-vz-Kaz"/>
+                    <constraint firstItem="CBb-8a-c3D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FMm-Uf-ixZ"/>
+                    <constraint firstItem="abj-Di-Tks" firstAttribute="top" secondItem="CBb-8a-c3D" secondAttribute="bottom" constant="10" id="HTY-M4-Jzj"/>
+                    <constraint firstItem="RCD-mT-FrM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="KYf-4C-xWC"/>
+                    <constraint firstItem="abj-Di-Tks" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pmf-Uz-XkJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="guide_wordLabel" destination="RCD-mT-FrM" id="o3r-Qb-9av"/>
+                <outlet property="hp_titleLabel" destination="CBb-8a-c3D" id="GEC-0k-asB"/>
+                <outlet property="user_nameLabel" destination="abj-Di-Tks" id="Swj-SU-YVO"/>
+            </connections>
+            <point key="canvasLocation" x="-461" y="-144.5"/>
+        </tableViewCell>
+    </objects>
+</document>

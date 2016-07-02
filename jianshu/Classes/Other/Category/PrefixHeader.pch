@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  jianshu
+//
+//  Created by Hiro on 16/5/17.
+//  Copyright © 2016年 Hiro. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "UIView+HRExtension.h"
+
+#import "UIBarButtonItem+HRExtension.h"
+
+#ifdef DEBUG
+#define HRLog(...) NSLog(__VA_ARGS__)
+#else
+#define HRLog(...)
+#endif
+
+#define HRLogFunc HRLog(@"%s",__func__)
+#define HRRGBColor(r,g,b)[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
+#define HRGlobalBg HRRGBColor(255, 255, 255)
+#endif
